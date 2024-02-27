@@ -11,7 +11,8 @@ import SwiftUI
 struct TekiApp: App {
     var body: some Scene {
         WindowGroup {
-            TekiMainView()
+            TekiMainView(viewModel: TekiMainView.ViewModel()
+            )
         }
     }
 }
