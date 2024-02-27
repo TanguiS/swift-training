@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct RoundedRectangleImage: View {
+    private var image: Image
+    
+    init(image: Image) {
+        self.image = image
+    }
+    
     var body: some View {
-        Image("turtulerock")
+        self.image
             .clipShape(RoundedRectangle(cornerRadius: 40.0))
             .overlay {
                 RoundedRectangle(cornerRadius: 40.0).stroke(.white, lineWidth: 5)
@@ -19,5 +25,5 @@ struct RoundedRectangleImage: View {
 }
 
 #Preview {
-    RoundedRectangleImage()
+    RoundedRectangleImage(image: Image("turtlerock"))
 }
