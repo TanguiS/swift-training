@@ -10,6 +10,12 @@ A "Game" where a *button* shuffles a text, which is a random combination of sent
 
 ![Teki-example-2](./assets/Teki-example-2.png "Teki Example 2")
 
+## Second Project : Apple tutorial Chapter 1 (SwiftUI Essentials)
+
+![apple-tutorial-chapter-1-1](./assets/apple-tutorial-chapter-1-1.png "Apple Tutorial - Chapter 1.1")
+
+![apple-tutorial-chapter-1-2](./assets/apple-tutorial-chapter-1-2.png "Apple Tutorial - Chapter 1.2")
+
 ## CC
 
 During training at @mobile-process (57000 Metz, France)
