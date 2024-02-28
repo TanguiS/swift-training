@@ -17,22 +17,26 @@ struct LandmarkRow: View {
                 .frame(width: 50, height: 50)
             Text(self.landmark.name)
             Spacer()
+            if self.landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
         }
     }
 }
 
 #Preview("Turtle Rock") {
-    LandmarkRow(landmark: landmarks[0])
+    LandmarkRow(landmark: ModelData().getLandmarks()[0])
 }
 
 
 #Preview("Salmon") {
-    LandmarkRow(landmark: landmarks[1])
+    LandmarkRow(landmark: ModelData().getLandmarks()[1])
 }
 
 #Preview("Turtle Rock & Salmon") {
     Group {
-        LandmarkRow(landmark: landmarks[0])
-        LandmarkRow(landmark: landmarks[1])
+        LandmarkRow(landmark: ModelData().getLandmarks()[0])
+        LandmarkRow(landmark: ModelData().getLandmarks()[1])
     }
 }

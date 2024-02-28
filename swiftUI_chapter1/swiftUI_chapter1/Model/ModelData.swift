@@ -7,6 +7,19 @@
 
 import Foundation
 
+@Observable
+class ModelData {
+    var landmarks: [Landmark]
+    
+    init() {
+        self.landmarks = load("landmarkData.json")
+    }
+    
+    public func getLandmarks() -> [Landmark] {
+        return self.landmarks
+    }
+}
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
@@ -28,5 +41,3 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
-
-var landmarks: [Landmark] = load("landmarkData.json")
