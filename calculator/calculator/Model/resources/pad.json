@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "displayString": "AC",
+        "color": "Cappuccino1"
+    },
+    {
+        "id": 1,
+        "displayString": "()",
+        "color": "Cappuccino1"
+    },
+    {
+        "id": 2,
+        "displayString": "%",
+        "color": "Cappuccino1"
+    },
+    {
+        "id": 3,
+        "displayString": "/",
+        "color": "Cappuccino2"
+    },
+    {
+        "id": 4,
+        "displayString": "7",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 5,
+        "displayString": "8",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 6,
+        "displayString": "9",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 7,
+        "displayString": "x",
+        "color": "Cappuccino2"
+    },
+    {
+        "id": 8,
+        "displayString": "4",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 9,
+        "displayString": "5",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 10,
+        "displayString": "6",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 11,
+        "displayString": "-",
+        "color": "Cappuccino2"
+    },
+    {
+        "id": 12,
+        "displayString": "1",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 13,
+        "displayString": "2",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 14,
+        "displayString": "3",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 15,
+        "displayString": "+",
+        "color": "Cappuccino2"
+    },
+    {
+        "id": 16,
+        "displayString": "0",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 17,
+        "displayString": ",",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 18,
+        "displayString": "DEL",
+        "color": "Cappuccino5"
+    },
+    {
+        "id": 19,
+        "displayString": "=",
+        "color": "Cappuccino2"
+    }
+]
