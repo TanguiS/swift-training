@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct RoundedButton: View {
-    private var buttonHandler: ButtonHandler
+    private var buttonViewModelHandler: ButtonViewModelHandler
     private let component: ButtonComponent
     
     init(
-        component: ButtonComponent, buttonHandler: ButtonHandler
+        component: ButtonComponent, 
+        buttonViewModelHandler: ButtonViewModelHandler
     ) {
         self.component = component
-        self.buttonHandler = buttonHandler
+        self.buttonViewModelHandler = buttonViewModelHandler
     }
     
     var body: some View {
         Button(action: {
             print(self.component.displayString)
-            self.buttonHandler.onClick(button: self.component)
+            self.buttonViewModelHandler.onClick(button: self.component)
         }) {
             let padding: CGFloat = 2.0
             ZStack(alignment: .center) {
-                let screenWidth: CGFloat = UIScreen.main.bounds.width - (2.0 * padding)
+                let screenWidth: CGFloat = 
+                    UIScreen.main.bounds.width - (2.0 * padding)
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(self.component.displayColor)
                     .frame(width: screenWidth / 5.0, height: screenWidth / 5.0)
@@ -42,7 +44,7 @@ struct RoundedButton: View {
 #Preview {
     RoundedButton(
         component: PadData().pads[0],
-        buttonHandler: RoundedButton.ButtonHandler(
+        buttonViewModelHandler: RoundedButton.ButtonViewModelHandler(
             screenHandler: CalculatorScreen.ScreenHandler()
         )
     )

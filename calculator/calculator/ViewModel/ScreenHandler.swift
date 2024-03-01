@@ -16,12 +16,6 @@ extension CalculatorScreen {
             self.result = self.starter
         }
         
-        private func onReset(change: String) -> Void {
-            if (self.result == self.starter || change == "=") {
-                self.result = ""
-            }
-        }
-        
         public func onChange(change: String) -> Void {
             self.onReset(change: change)
             self.result.append(change)

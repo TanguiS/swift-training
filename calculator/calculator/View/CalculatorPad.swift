@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CalculatorPad: View {
     @Environment(PadData.self) var padData: PadData
-    private var buttonHander: RoundedButton.ButtonHandler
+    private var buttonHander: RoundedButton.ButtonViewModelHandler
     
-    init(buttonHandler: RoundedButton.ButtonHandler) {
-        self.buttonHander = buttonHandler
+    init(buttonViewModelHandler: RoundedButton.ButtonViewModelHandler) {
+        self.buttonHander = buttonViewModelHandler
     }
     
     var body: some View {
@@ -24,7 +24,7 @@ struct CalculatorPad: View {
                         pad in
                         RoundedButton(
                             component: pad,
-                            buttonHandler: self.buttonHander
+                            buttonViewModelHandler: self.buttonHander
                         )
                     }
                 }
@@ -35,7 +35,7 @@ struct CalculatorPad: View {
 
 #Preview {
     CalculatorPad(
-        buttonHandler: RoundedButton.ButtonHandler(
+        buttonViewModelHandler: RoundedButton.ButtonViewModelHandler(
             screenHandler: CalculatorScreen.ScreenHandler()
         )
     )

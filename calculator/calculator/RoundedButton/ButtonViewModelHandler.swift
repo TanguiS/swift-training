@@ -1,5 +1,5 @@
 //
-//  ButtonHandler.swift
+//  ButtonViewModelHandler.swift
 //  calculator
 //
 //  Created by Mobile Process on 29/02/2024.
@@ -8,7 +8,7 @@
 import Foundation
 
 extension RoundedButton {
-    class ButtonHandler {
+    class ButtonViewModelHandler {
         private var screenHandler: CalculatorScreen.ScreenHandler
         
         init(screenHandler: CalculatorScreen.ScreenHandler) {

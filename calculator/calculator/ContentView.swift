@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     private var screenHandler: CalculatorScreen.ScreenHandler
-    private var buttonHandler: RoundedButton.ButtonHandler
+    private var buttonViewModelHandler: RoundedButton.ButtonViewModelHandler
     
     init() {
         self.screenHandler = CalculatorScreen.ScreenHandler()
-        self.buttonHandler = RoundedButton.ButtonHandler(
+        self.buttonViewModelHandler = RoundedButton.ButtonViewModelHandler(
             screenHandler: self.screenHandler
         )
     }
@@ -22,10 +22,9 @@ struct ContentView: View {
         ZStack(alignment: .center) {
             Color("Cappuccino3").ignoresSafeArea(.all)
             VStack {
-                Spacer()
                 CalculatorScreen(screenHandler: self.screenHandler)
                     .padding(.bottom, 15.0)
-                CalculatorPad(buttonHandler: self.buttonHandler)
+                CalculatorPad(buttonViewModelHandler: self.buttonViewModelHandler)
             }
             .padding()
         }
